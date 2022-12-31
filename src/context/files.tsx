@@ -90,7 +90,7 @@ const FileProvider: React.FC<Props> = ({ children }) => {
             );
 
             console.log(
-              `A imagem ${uploadedFile.name} est√° ${progress}% carregada... `
+              `A imagem ${uploadedFile.name} está ${progress}% carregada... `
             );
 
             updateFile(uploadedFile.id, { progress });
@@ -98,7 +98,7 @@ const FileProvider: React.FC<Props> = ({ children }) => {
         })
         .then((response) => {
           console.log(
-            `A imagem ${uploadedFile.name} j√° foi enviada para o servidor!`
+            `A imagem ${uploadedFile.name} já foi enviada para o servidor!`
           );
 
           updateFile(uploadedFile.id, {
